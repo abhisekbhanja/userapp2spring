@@ -1,0 +1,7 @@
+com.example.userprofile.aspect.CustomAspect#logBefore(Lorg/aspectj/lang/JoinPoint;)V
+false
+28b774938cd563e56bcc713c16cb5807
+==
+getName org.aspectj.lang.Signature#getName()Ljava/lang/String;
+getSignature org.aspectj.lang.JoinPoint#getSignature()Lorg/aspectj/lang/Signature;
+println java.io.PrintStream#println(Ljava/lang/String;)V

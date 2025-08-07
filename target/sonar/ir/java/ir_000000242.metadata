@@ -1,0 +1,5 @@
+com.example.userprofile.service.MyService#throwError()V
+false
+be6358ad667024c35305a767f2c0f7bd
+java.lang.RuntimeException#<init>(Ljava/lang/String;)V
+java.lang.RuntimeException#instance-init#

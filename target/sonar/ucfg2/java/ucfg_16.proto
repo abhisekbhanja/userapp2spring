@@ -1,0 +1,27 @@
+
+…com.example.userprofile.service.MyService#addUser(Lcom/example/userprofile/model/UserModel;)Lcom/example/userprofile/model/UserModel;®
+£C:/Users/LENOVO/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/User Microservices/UserProfile2/src/main/java/com/example/userprofile/service/MyService.java ("1*Ö
+1 («
+¨
+ (7
+%01com.example.userprofile.repository.UserRepository"__id*]
+
+__unknown_file (A*?+
+)com.example.userprofile.service.MyService"
+userrepositoryÛØ
+ (%-
+%1'com.example.userprofile.model.UserModel"]org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;*U
+
+__unknown_file (9
+7
+%01com.example.userprofile.repository.UserRepository*M
+
+__unknown_file (1
+/
+user'com.example.userprofile.model.UserModel2save(Ljava/lang/Object;)";
+ (&/
+-
+%1'com.example.userprofile.model.UserModel:;
+ (+/
+user'com.example.userprofile.model.UserModelB-+
+)com.example.userprofile.service.MyServiceH
