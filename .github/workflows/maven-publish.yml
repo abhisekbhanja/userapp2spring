@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: springboot-app_docker_image
+  IMAGE_NAME: springboot-app-docker-image
 
 jobs:
   build-and-push:
