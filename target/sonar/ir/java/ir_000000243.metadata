@@ -1,5 +1,0 @@
-com.example.userprofile.service.MyService#addUser(Lcom/example/userprofile/model/UserModel;)Lcom/example/userprofile/model/UserModel;
-false
-005c6bccd5e067818064876e050d8b13
-==
-save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;

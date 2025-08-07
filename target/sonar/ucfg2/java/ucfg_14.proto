@@ -1,18 +1,0 @@
-
-Ucom.example.userprofile.service.MyService#greet(Ljava/lang/String;)Ljava/lang/String;®
-£C:/Users/LENOVO/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/User Microservices/UserProfile2/src/main/java/com/example/userprofile/service/MyService.java ("1*¤
-1 (o
-m
- (
-%0java.lang.String"__concat*
- (	
-Hello, *&
- (
-
-namejava.lang.String"$
- ( 
-
-%0java.lang.String:$
- ( 
-namejava.lang.StringB-+
-)com.example.userprofile.service.MyServiceH

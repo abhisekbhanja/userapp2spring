@@ -1,5 +1,0 @@
-com.example.userprofile.controller.UserController#getUser()Ljava/lang/String;
-false
-526bd562c6fde30d000ec665a0ac51f9
-==
-greet com.example.userprofile.service.MyService#greet(Ljava/lang/String;)Ljava/lang/String;
