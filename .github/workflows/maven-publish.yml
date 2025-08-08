@@ -3,10 +3,10 @@ name: Build and Deploy Spring Boot App with Docker
 on:
   push:
     branches:
-      - main  # or change to your main branch name
+      - tryapp1 # or change to your main branch name
 
 env:
-  IMAGE_NAME: springboot-app-docker-image
+  IMAGE_NAME: appv2
 
 jobs:
   build:
@@ -36,5 +36,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:v2
 
