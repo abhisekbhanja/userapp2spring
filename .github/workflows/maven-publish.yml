@@ -46,3 +46,4 @@ jobs:
             -e SPRING_DATASOURCE_PASSWORD=${{ secrets.DB_PASSWORD }} \
             -p 8200:8200 \
             ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            printenv
