@@ -52,13 +52,13 @@ jobs:
         run: |
          echo "SPRING_DATASOURCE_URL=${{ vars.DB_URL }}"
 
-      # - name: Run Docker Container and print env var
-      #   run: |
-      #     docker run --rm \
-      #     -e SPRING_DATASOURCE_URL=jdbc:oracle:thin:@host.docker.internal:1521:ORCL \
-      #     -e SPRING_DATASOURCE_USERNAME=${{ secrets.DB_USERNAME }} \
-      #     -e SPRING_DATASOURCE_PASSWORD=${{ secrets.DB_PASSWORD }} \
-      #     ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest \
-      #     sh -c 'echo "SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL"'
+      - name: Run Docker Container and print env var
+        run: |
+          docker run --rm \
+          -e SPRING_DATASOURCE_URL=jdbc:oracle:thin:@host.docker.internal:1521:ORCL \
+          -e SPRING_DATASOURCE_USERNAME=${{ secrets.DB_USERNAME }} \
+          -e SPRING_DATASOURCE_PASSWORD=${{ secrets.DB_PASSWORD }} \
+          ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest \
+          sh -c 'echo "SPRING_DATASOURCE_URL=$SPRING_DATASOURCE_URL"'
 
 
