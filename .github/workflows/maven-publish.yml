@@ -38,12 +38,17 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
           
-      - name: Run Docker Container
-        run: |
-         docker run -d --name springboot-app \
-            -e SPRING_DATASOURCE_URL=${{ secrets.DB_URL }} \
-            -e SPRING_DATASOURCE_USERNAME=${{ secrets.DB_USERNAME }} \
-            -e SPRING_DATASOURCE_PASSWORD=${{ secrets.DB_PASSWORD }} \
-            -p 8200:8200 \
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-            printenv
+     # - name: Run Docker Container
+      #  run: |
+     #    docker run -d --name springboot-app \
+     #      -e SPRING_DATASOURCE_URL=${{ secrets.DB_URL }} \
+     #       -e SPRING_DATASOURCE_USERNAME=${{ secrets.DB_USERNAME }} \
+     #      -e SPRING_DATASOURCE_PASSWORD=${{ secrets.DB_PASSWORD }} \
+     #       -p 8200:8200 \
+     #      ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+     #      printenv
+     
+     - name: Check the DB URL value (GitHub Action level)
+       run: |
+        echo "SPRING_DATASOURCE_URL=${{ secrets.DB_URL }}"
+
