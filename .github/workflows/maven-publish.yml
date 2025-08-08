@@ -48,7 +48,7 @@ jobs:
      #      ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
      #      printenv
      
-     - name: Check the DB URL value (GitHub Action level)
-       run: |
-        echo "SPRING_DATASOURCE_URL=${{ secrets.DB_URL }}"
+      - name: Check the DB URL value (GitHub Action level)
+        run: |
+         echo "SPRING_DATASOURCE_URL=${{ secrets.DB_URL }}"
 
